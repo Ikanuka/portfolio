@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,6 +61,9 @@
                             </li>
                         </ul>
                     </div>
+                        <div class="btnTrad">
+                            <button type="button" class="btn btn-dark">FR</button>
+                        </div>
                 </div>
             </nav>
         </header>
@@ -313,21 +316,21 @@
                         
                         <div class="col-12 offset-md-1 col-md-7">
                             <!-- FORMULAIRE -->
-                            <form class="row gy-2">
+                            <form action ="" method = "POST" class="row gy-2"> <!--A method="post" attribute value specifies that the form data will be sent to the server by storing it in an HTTP request body.-->
                                 
                                 <div class="col-6">
                                     <label for="prenom" class="form-label">Prénom</label>
-                                    <input type="text" class="form-control" name="prenom" id="prenom">
+                                    <input type="text" class="form-control" name="prenom" id="prenom" required>
                                 </div>
                                 <div class="col-6">
                                     <label for="nom" class="form-label">Nom</label>
-                                    <input type="text" class="form-control" name="nom" id="nom">
+                                    <input type="text" class="form-control" name="nom" id="nom" required> <!--required permet au navigateur de devoir renseigner le champs requis pour valider le form-->
                                 </div>
                                 <div class="col-12">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="text" class="form-control" name="email" id="email">
+                                    <input type="text" class="form-control" name="email" id="email" required>
                                 </div>
-                                <div class="col-12">
+                                 <div class="col-12">
                                     <label for="message" class="form-label">Message</label>
                                     <textarea name="message" id="message" rows="3" class="form-control"></textarea>
                                 </div>
